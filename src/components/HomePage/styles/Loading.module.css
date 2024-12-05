@@ -1,0 +1,29 @@
+.loader {
+  width: 13em;
+  aspect-ratio: 0.5;
+  border-radius: 0.8em;
+  display: block;
+  position: relative;
+  background: var(--color-black);
+}
+.loader::after {
+  content: '';
+  width: calc(100% - 30px);
+  height: calc(100% - 15px);
+  top: 20px;
+  left: 15px;
+  position: absolute;
+  background-image: 
+    linear-gradient(to left, transparent 20%, var(--color-black) 40%, transparent 60%),
+    linear-gradient(#333 0 70%, transparent 70% 75%, #333 75% 93%, transparent 93% 100%);
+  background-repeat: no-repeat;
+  background-position: -185px 0, center 0;
+  box-sizing: border-box;
+  animation: animloader 1.2s linear infinite;
+}
+
+@keyframes animloader {
+  to {
+    background-position: 185px 0, center 0;
+  }
+}

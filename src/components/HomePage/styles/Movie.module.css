@@ -1,0 +1,33 @@
+.movie {
+  width: 100%;
+  max-width: 13em;
+  border-radius: 0.8em;
+  overflow: hidden;
+  background-color: var(--color-black);
+  transition: transform 150ms ease;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.04);
+  }
+}
+.poster {
+  border-radius: 0.8em;
+}
+.genres_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(5em, 1fr));
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.4em 0.2em;
+  padding: 1em 1em 1.5em;
+}
+.genre {
+  font-size: 0.65em;
+  padding: 0.5em 1em;
+  border-radius: 0.8em;
+  background-color: var(--bg-color);
+  text-align: center;
+  &:hover {
+    filter: brightness(1.4);
+  }
+}

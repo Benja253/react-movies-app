@@ -1,0 +1,17 @@
+.movies_container {
+  display: flex;
+  gap: 1.5em 1em;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 100%;
+  max-width: 1170px;
+}
+@media screen and (min-width: 500px) {
+  .movies_container {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
