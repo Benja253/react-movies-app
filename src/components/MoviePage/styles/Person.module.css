@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  max-width: 8em;
+  background-color: var(--color-black);
+  border-radius: 0 0 0.8em 0.8em;
+  transition: transform 150ms ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+.header {
+  border-radius: 0.8em;
+  overflow: hidden;
+}
+.body {
+  padding: 0.8em 0.5em 1.2em;
+}
+.name {
+  font-size: 0.75em;
+  font-weight: 600;
+}
+.mote {
+  font-size: 0.7em;
+  font-weight: 300;
+}
